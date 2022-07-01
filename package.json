@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "start": "node index.js",
-        "heroku-postbuild": "NPM_CONFIG=fales npm install --prefix client && npm run build --prefix client"
+        "heroku-postbuild": "NPM_CONFIG=fales cd client npm install && npm run build"
     },
     "engines": {
         "node": "16.x",
