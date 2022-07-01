@@ -27,4 +27,4 @@ app.use("/api/check", stripe);
 app.use(express.static(path.resolve(__dirname, "./client/build")))
 app.get("*", (req, res) => res.sendFile(path.resolve(__dirname, "./client/build", "index.html")))
 
-app.listen(process.env.PORT || port, () => console.log(`server running in port ${Port}...`))
+app.listen(process.env.PORT || port, () => console.log(`server running in port ${port}...`))
